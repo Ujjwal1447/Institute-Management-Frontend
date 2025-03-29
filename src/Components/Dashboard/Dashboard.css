@@ -1,0 +1,184 @@
+.Dashboard-main-contener {
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(to right, rgb(201, 200, 210), rgb(157, 157, 219));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Dashboard-contener {
+  height: 94vh;
+  width: 96%;
+  background-color: #f9e7e7;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.nav-contener {
+  /* width: 20%; */
+  /* height: 95vh; */
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #fbc2eb, #8fd3f4);
+  padding: 10px;
+  border-radius: 2px;
+}
+
+/* .main-contener {
+    width: 80%;
+    height: 95vh;
+    background-color: aliceblue;
+} */
+
+.main-contener {
+  width: 80%;
+  height: 95vh;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent unnecessary overflow */
+}
+
+.main-top-bar {
+  height: 50px;
+  background: linear-gradient(90deg, #ff9a9e, #fad0c4, #fbc2eb);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px;
+  gap: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo-contener {
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle at 30% 30%, #ffffff, #dfe9f3);
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+.profile-logo {
+  width: 55px;
+  height: 55px;
+}
+
+.profile-contener {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(135deg, #e5bff78f, #e2a7e6);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.profile-name {
+  font-size: 15px;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-btn {
+  background: linear-gradient(45deg, #ff6a88, #ff914d);
+  color: white;
+  width: fit-content;
+  padding: 4px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.4s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.profile-btn:hover {
+  background: linear-gradient(45deg, #ff914d, #ff6a88);
+}
+
+.brand-contener {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.brand-name {
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.profile-contain {
+  flex-direction: column;
+}
+
+.para-sidebar {
+  font-size: 15px;
+  color: rgb(6, 27, 255);
+  position: relative;
+  top: -7px;
+}
+
+.manu-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+}
+
+.menu-active-link {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 10px;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #6b82e7;
+}
+
+.menu-link:hover {
+  background-color: rgb(74, 74, 231);
+  transition: 0.5s;
+}
+
+.fa-solid {
+  margin-right: 5px !important;
+}
+
+.contact-us {
+  position: fixed;
+  color: white;
+  bottom: 10px;
+}
+
+/* .outlet-area {
+    padding: 10px;
+} */
+
+.outlet-area {
+  padding: 10px;
+  height: calc(
+    100vh - 50px
+  ); /* Adjust height dynamically based on the container */
+  overflow-y: auto; /* Allow vertical scrolling */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  background-color: aliceblue; /* Optional: Add distinct styling */
+  border-radius: 5px; /* Optional: For consistent rounded corners */
+}

@@ -1,0 +1,15 @@
+.moveto {
+    display: inline-block;
+    color: #007bff;
+    /* Blue color for the link */
+    text-decoration: none;
+    /* Removes underline */
+    font-size: 16px;
+    /* Adjust font size */
+    font-weight: 500;
+    /* Medium font weight for better readability */
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Smooth transition for hover effect */
+}

@@ -1,0 +1,195 @@
+/* Global Styling */
+.student-detail-main-wrapper {
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #ffffff, #f8f9fa);
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Student Header */
+.student-detail-header {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+/* Button Styling */
+.student-detail-header button {
+  padding: 10px 15px;
+  background: linear-gradient(135deg, #ff5f6d, #ff9966);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.student-detail-header button:hover {
+  background: linear-gradient(135deg, #ff9966, #ff5f6d);
+  transform: scale(1.05);
+}
+
+/* Student Details */
+.sd-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+/* Student Image */
+.sd-detail img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-right: 20px;
+  object-fit: cover;
+  border: 4px solid #007bff;
+  transition: transform 0.3s ease-in-out;
+}
+
+.sd-detail img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+/* Placeholder Image */
+.placeholder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Payment History Table */
+.payment-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.payment-history-table th,
+.payment-history-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Table Header */
+.payment-history-table th {
+  background: linear-gradient(135deg, #007bff, #00c6ff);
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Hover Effect for Table Rows */
+.payment-history-table tr:hover {
+  background: rgba(0, 123, 255, 0.1);
+  transform: scale(1.01);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Error Styling */
+.error {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+  .student-detail-main-wrapper {
+    padding: 15px;
+  }
+
+  .sd-detail {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sd-detail img {
+    margin: 0 auto 15px;
+  }
+
+  .payment-history-table th,
+  .payment-history-table td {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .student-detail-main-wrapper {
+    padding: 10px;
+  }
+
+  .student-detail-header button {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .payment-history-table {
+    font-size: 12px;
+  }
+
+  .payment-history-table th,
+  .payment-history-table td {
+    padding: 6px;
+  }
+}

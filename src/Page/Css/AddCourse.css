@@ -1,0 +1,71 @@
+.add-course-form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Form heading */
+.add-course-form h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #333;
+}
+
+/* Input fields */
+.add-course-form input[type="text"],
+.add-course-form input[type="date"],
+.add-course-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    transition: border 0.3s ease;
+}
+
+/* Input hover and focus states */
+.add-course-form input[type="text"]:focus,
+.add-course-form input[type="date"]:focus,
+.add-course-form input[type="file"]:focus {
+    outline: none;
+    border: 1px solid #007BFF;
+}
+
+.Institute-logo {
+    width: 70px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 50%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+
+}
+
+/* Submit button hover and disabled state */
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.submit-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
